@@ -1,0 +1,12 @@
+path:  ./
+train: 'train'
+val: 'test'
+
+# class names
+names: 
+  0: 'green'
+  1: 'off'
+  2: 'red'
+  3: 'yellow'
+  
+ 
