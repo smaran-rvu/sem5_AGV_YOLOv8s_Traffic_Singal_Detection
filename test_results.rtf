@@ -1,0 +1,15 @@
+(yolov8) studio-lab-user@default:~$ yolo val model="yolov8s_traffic_lights.pt" data=dataset_test.yaml batch=16 imgsz=640
+Ultralytics YOLOv8.2.13 🚀 Python-3.8.19 torch-2.3.0+cu121 CPU (Intel Xeon Platinum 8259CL 2.50GHz)
+Model summary (fused): 168 layers, 11127132 parameters, 0 gradients, 28.4 GFLOPs
+val: Scanning /home/studio-lab-user/datasets/test... 468 images, 0 backgrounds, 0 corrupt: 100%|██████████| 468/468 [0
+val: New cache created: /home/studio-lab-user/datasets/test.cache
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 30/30 [02:5
+                   all        468       1264      0.919      0.912      0.939      0.662
+                 green        468        479      0.923      0.944      0.977      0.677
+                   off        468         62      0.943      0.808      0.881      0.585
+                   red        468        706       0.97      0.955      0.987      0.711
+                yellow        468         17      0.838      0.941      0.913      0.677
+Speed: 2.6ms preprocess, 349.6ms inference, 0.0ms loss, 2.5ms postprocess per image
+Results saved to runs/detect/val
+💡 Learn more at https://docs.ultralytics.com/modes/val
+(yolov8) studio-lab-user@default:~$ 
